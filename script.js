@@ -1,8 +1,8 @@
 //Şehir veya ülkenin hava durmunu getirmek için kullanılan fonksiyon.
 function getWeather(cityName){
 
-    //APİ key'dc4ddadffedec184e639816b148f9ef4'
-    const url =`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=dc4ddadffedec184e639816b148f9ef4&units=metric&lang=tr`
+    
+    const url =`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid={apiKey}&units=metric&lang=tr`
     
     //Axios get isteği oluşturuldu. 
     axios.get(url)
